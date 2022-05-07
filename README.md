@@ -40,3 +40,5 @@ migrations (Flask-Migrate)
    ```
    
    Then run `migrate` and `upgrade`
+   
+6. And so on..
