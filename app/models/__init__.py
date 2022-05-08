@@ -8,6 +8,7 @@ from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
 
+# Based on https://julienharbulot.com/python-dynamical-import.html
 def load_all_models():
     package_dir = str(Path(__file__).resolve().parent)
     for (_, module_name, _) in iter_modules([package_dir]):
