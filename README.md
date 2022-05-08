@@ -1,7 +1,7 @@
 # flask-app-template
 
-App template supported separated models (Flask-SQLAlchemy) and 
-migrations (Flask-Migrate) 
+Flask app template with migrations and autoloader.
+Based on Flask-SQLAlchemy and Flask-Migrate. 
 
 ## How to use
 
@@ -33,12 +33,5 @@ migrations (Flask-Migrate)
        id = db.Column(db.Integer, primary_key=True)
        name = db.Column(db.String(128))
    ```
-   
-   Add into `app/models/__init__.py`
-   ```python
-   from .product import Product
-   ```
-   
-   Then run `migrate` and `upgrade`
-   
-6. And so on..
+
+   Then run `migrate`, `upgrade` and commit changes.
